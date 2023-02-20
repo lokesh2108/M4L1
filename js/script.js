@@ -102,7 +102,7 @@ empTable.addEventListener("click", (e) => {
     if (e.target.classList.contains('del')){
         if(confirm("Do you want to delete this employee detail?")) {
             empTable.deleteRow(e.target.parentNode.parentNode.rowIndex);
-            $("empCount").innerText = "(" + --c + ")";
+            $("empCount").innerHTML = "(" + --c + ")";
             $('id').focus();
         };
     }
